@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1. 0"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="icon" href="img/NOI2021Logo.png" type="image/gif" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--fontawesome file -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!--boostrap-social file -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>NOI</title>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" id="navbar-main">
+        <!-- <div class="container"> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto"><img src="img/NOI2021Logo.png" alt="" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-sm"></span> Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-info fa-sm"></span> How to Compete</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-sm"></span> Resources</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-trophy fa-sm"></span> Awards</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-hourglass fa-sm"></span> Timeline</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-server fa-sm"></span> Results</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-users fa-sm"></span> IOI 2021</a></li>
+                </ul>
+                <div class="col-5 col-sm-5">
+                    <form class="form-inline my-lg-0 float-md-right">
+                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="nav-search">
+                        <button class="btn btn-sm btn-outline-warning my-2 my-sm-0" type="submit" id="nav-search-button">Search</button>
+                    </form>
+                </div>
+<!--                 <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span> -->
+                <span class="navbar-text">
+                    <a type="button" id="login_model" data-toggle="tooltrip" title="Sign-In"> <!-- data-toggle="modal" data-target="#loginModal" -->
+                        <span class="fa fa-sign-in"></span> Sign Up
+                    </a>
+                </span>
+            </div>
+            
+        <!-- </div> -->
+    </nav>
+    </div>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign Up </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row" id="btn-model">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-warning btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    
+        <div class="row">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid mx-auto" src="img/national (3).jpg" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <!-- <h1 class="mt-0">N<span style="color: #b53b05;">O</span>I-2021</h1> -->
+                                <!-- <p class="d-none d-sm-block"><b><span style="color: #b53b05;">i</span><h5>National Olympiad in Informatics - Sri Lanka</h5></b></p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid mx-auto" src="img/national 8.jpg" alt="">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h1 class="mt-0">N<span style="color: #b53b05;">O</span>I-2021</h1>
+                                <p class="d-none d-sm-block"><b><span style="color: #b53b05;">i</span>National Olympiad in Informatics - Sri Lanka</b></p>
+                            </div> -->
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid mx-auto" src="img/national (6).jpg" alt="">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h1 class="mt-0">N<span style="color: #b53b05;">O</span>I-2021</h1>
+                                <p class="d-none d-sm-block"><b><span style="color: #b53b05;">i</span>National Olympiad in Informatics - Sri Lanka</b></p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+    <div class="container">  
+        <div class="row row-content align-items-center">
+            <!-- <div class="d-none d-sm-block col-sm-3">
+
+            </div> -->
+            <div class="offset-sm-1 col-12 col-sm-10">
+                <center>
+                    <h3>NOI 2021 Registration are Now Open!</h3>
+                    <h4 class="pb-4">For more information regarding the program, please see <span style="color: #14aa9a;">"Timeline"</span> page</h4>
+                    <a href="#" type="button" class="btn btn-primary btn-lg">Register Now!</a>
+                </center>
+            </div>
+            <!-- <div class="d-none d-sm-block col-sm-3">
+                
+            </div> -->
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="offset-sm-1 col-12 col-sm-10">
+                <center>
+                    <h3>IOI 2020 Sri Lanka Delegation</h3>
+                    <h5 class="pb-4">Congratulations to Sithija, Lakshith, Chirath and Thithiesha who will represent Sri Lanka at the 32nd International Olympiad in Informatics.</h5>
+                </center>
+            </div>
+            <div class="row row-content1 justify-content-center" id="#delegation">
+                <div class="image-column1">
+                    <img src="img/Sithija.jpg" alt="" data-toggle="tooltrip" title="Sithija Kotuwewatta" class="rounded-circle img-fluid ">
+                    <div class="overlay">
+                        <div class="text">Sithija Kotuwewatta</div>
+                    </div>
+                </div>
+                <div class="image-column1">
+                    <img src="img/Lakshith.jpg" alt="" data-toggle="tooltrip" title="Lakshith Nishshanke" class="rounded-circle img-fluid">
+                    <div class="overlay">
+                        <div class="text">Lakshith Nishshanke</div>
+                    </div>
+                </div>
+                <div class="image-column1">
+                    <img src="img/Chirath.jpg" alt="" data-toggle="tooltrip" title="Chirath Nirodha" class="rounded-circle img-fluid">
+                    <div class="overlay ">
+                        <div class="text">Chirath Nirodha</div>
+                    </div>
+                </div>
+                <div class="image-column1">
+                    <img src="img/thithiesha.jpg" alt="" data-toggle="tooltrip" title="Thithiesha Mahabaduge" class="rounded-circle img-fluid">
+                    <div class="overlay">
+                        <div class="text">Thithiesha Mahabaduge</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4">
+                <img src="img/NOI2021Logo-1000.png" alt="" class="img-fluid mx-auto d-block">
+            </div>
+            <div class="col-sm-8 mx-auto">
+                <h3 class="pb-4">What is the National Olympiad in Informatics?</h3>
+                <p>The National Olympiad in Informatics is a competition for school students, based on computing. The contestants have to write computer programs to solve a given set of problems, within a limited time. Competing at NOI puts the problem solving ability of students to work</p>
+
+                <p>The NOI is the competition that is used to select students to compete at the International Olympiad in Informatics (IOI) competition, held annually in different countries. Each year, 4 students are selected from the National Olympiad in Informatics competition, to represent Sri Lanka at IOI.</p>
+
+                <p>If you are a school student interested in problem solving and computers, put your skills to test and improve them with NOI!</p>
+            </div>
+        </div>
+        <div class="row row-content align-items-center" id="images">
+
+            <div class="image-column">
+                <img src="img/team-2016.png" alt="" id="2016" data-toggle="tooltrip" title="2016 Team">
+                <div class="overlay">
+                    <div class="text">2016 Team</div>
+                </div>
+            </div>
+            <div class="image-column">
+                <img src="img/team-2017.png" alt="" id="2017" data-toggle="tooltrip" title="2017 Team">
+                <div class="overlay">
+                    <div class="text">2017 Team</div>
+                </div>
+            </div>
+            <div class="image-column">
+                <img src="img/team-2018.png" alt="" id="2018" data-toggle="tooltrip" title="2018 Team">
+                <div class="overlay ">
+                    <div class="text">2018 Team</div>
+                </div>
+            </div>
+            <div class="image-column">
+                <img src="img/team-2019.jpg" alt=""  id="2019" data-toggle="tooltrip" title="2019 Team">
+                <div class="overlay">
+                    <div class="text">2019 Team</div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <h3 class="d-none d-sm-block" id="text-header">National Olympiad in Informatics program is organized by the ACM student Chapter of UCSC, with collaboration of IOI alumni of Sri Lanka</h3>
+            <div class="col-sm-8 order-last pt-0">
+                <img src="img/acm_ucsc.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-4">
+                <img src="img/NOiLogo.png" alt="" class="img-fluid">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- google map -->
+    <div class="container pb-4">
+        <div class="row">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20colombo&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://embedgooglemap.net/134/">torrentz2</a></div>
+                    <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
+                    </style>
+                </div>
+        </div>
+    </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row justify-content-center pt-3 pb-2">
+                    <h4 id="footer-header">Get In Touch With Us</h4>
+                </div>
+                <div class="row">             
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                            <li><a href="#"><span class="fa fa-info fa-lg"></span> How to Compete</a></li>
+                            <li><a href="#"><span class="fa fa-list fa-lg"></span> Resources</a></li>
+                            <li><a href="#"><span class="fa fa-trophy fa-lg"></span> Awards</a></li>
+                            <li><a href="#"><span class="fa fa-hourglass fa-lg"></span> Timeline</a></li>
+                            <li><a href="#"><span class="fa fa-server fa-lg"></span> Results</a></li>
+                            <li><a href="#"><span class="fa fa-users fa-lg"></span> IOI 2021</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                          ACM Student Chapter UCSC,<br>
+                          University of Colombo School of Computing,<br>
+                          35, Reid Avenue,<br>
+                          Colombo 7,Sri Lanka<br>
+                          <i class="fa fa-phone fa-lg pt-2"></i> +11 234 5678<br>
+                          <i class="fa fa-fax fa-lg pt-2"></i> Fax: +11 234 5678<br>
+                          <i class="fa fa-envelope fa-lg pt-2"></i> Email: <a href="mailto:#">#@gmail.com</a>
+                       </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center" id="footer-url">
+                            <!-- <a href="#" class="mr-1"><img src="icon/placeholder.png"></a> -->
+                            <a href="#" class="mr-1" data-toggle="tooltrip" title="Facebook"><img src="icon/facebook.png"></a>
+                            <a href="#" class="mr-1" data-toggle="tooltrip" title="Twitter"><img src="icon/twitter (1).png"></a>
+                            <a href="#" class="mr-1" data-toggle="tooltrip" title="Linkedin"><img src="icon/linkedin.png"></a>
+                            <a href="#" class="mr-1" data-toggle="tooltrip" title="Instagram"><img src="icon/instagram.png"></a>
+                            <a href="#" class="mr-1" data-toggle="tooltrip" title="Youtube"><img src="icon/youtube.png"></a>
+                            
+                        </div>
+                    </div>
+               </div>
+               <div class="row justify-content-center">             
+                    <div class="col-auto pt-3" id="copyright">
+                        <p>Copyright © 2021 NOI. All right reserved.</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+
+    <!-- Boostrap Javascript --> 
+    <script src="node_modules/jquery/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#mycarousel').carousel({interval: 2000});
+            $(".btn").click(function(){
+                $('#cancel').modal('hide');
+            });
+            $("#login_model").click(function(){
+                $("#loginModal").modal("show");
+                $("#loginModal").modal("toggle");
+            });
+            $("#login_model","#footer-url","#2016","#2017","#2018","#2019").hover(function(){
+                $("#login_model","#footer-url","#2016","#2017","#2018","#2019").tooltip();
+            });
+
+            $(window).load(function() { 
+            $(".carousel .item").each(function() { 
+                var i = $(this).next(); 
+                i.length || (i = $(this).siblings(":first")), 
+                  i.children(":first-child").clone().appendTo($(this)); 
+                
+                for (var n = 0; n < 4; n++)(i = i.next()).length || 
+                  (i = $(this).siblings(":first")), 
+                  i.children(":first-child").clone().appendTo($(this)) 
+            }) 
+        }); 
+
+        });
+    </script>
+
+</body>
+</html>

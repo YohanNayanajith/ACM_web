@@ -1,0 +1,31 @@
+{
+  "name": "test-2",
+  "version": "1.0.0",
+  "description": "sample project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YohanNayanajith/Web.git"
+  },
+  "author": "Yohan Nayanajith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YohanNayanajith/Web/issues"
+  },
+  "homepage": "https://github.com/YohanNayanajith/Web#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^1.9.1",
+    "lite-server": "^2.5.4",
+    "node-sass": "^5.0.0",
+    "popper.js": "^1.16.1"
+  }
+}
